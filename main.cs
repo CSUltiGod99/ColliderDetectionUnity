@@ -2,7 +2,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using UntiyEngine;
+using UnityEngine;
 
 public class enemyCollider : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class enemyCollider : MonoBehaviour
      public Transform enemyTargetLocation;
      public Vector3 enemyTargPosition;
 
-    /*
+     //  public 
   
 
 
@@ -22,9 +22,21 @@ public class enemyCollider : MonoBehaviour
     void Update()
     {
   
-      if(
+      if(enemyTargPosition.z > 2)
+      {
+          /
+      
+      }   //
 
+      if(true)
+      {
+          Ll
+      }
 
+      if(collision.tag == "Enemy")
+      {
+          
+      }
 
 
 
