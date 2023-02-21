@@ -11,6 +11,7 @@ public class enemyCollider : MonoBehaviour
   // the colour of the Light.
 
      public GameObject enemySetTarget;
+     public GameObject enemyAdditTarget_1;
      public Transform enemyTargetLocation;
      public Vector3 enemyTargPosition;
 
@@ -22,41 +23,23 @@ public class enemyCollider : MonoBehaviour
     void Update()
     {
   
-      if(enemyTargPosition.z > 2)
+      if(collision.tag == "Enemy1")
       {
-          /
-      
+          // this code will show what you if the tag is equal to 'Enemy1'
+          Debug.Log("collision hit Enemy1");
       }   //
 
       if(true)
       {
-          Ll
+          Destroy(SetTarget);
       }
 
       if(collision.tag == "Enemy")
       {
           
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
+      if(enemyTargetPosition.z > 0)
+      {
+          Destroy(enemyAdditTarget_1);
+      }
 }
