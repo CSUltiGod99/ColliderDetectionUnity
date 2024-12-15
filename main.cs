@@ -8,17 +8,12 @@ public class enemyCollider : MonoBehaviour
 {
      public Light mainLight;
      public Light detectionLight; // this will be used to define each object by 
-  // the colour of the Light.
+  // the colour of the Light
 
      public GameObject enemySetTarget;
      public GameObject enemyAdditTarget_1;
      public Transform enemyTargetLocation;
      public Vector3 enemyTargPosition;
-
-     //  public 
-  
-
-
 
     void Update()
     {
@@ -38,6 +33,7 @@ public class enemyCollider : MonoBehaviour
       {
           
       }
+      
       if(enemyTargetPosition.z > 0)
       {
           Destroy(enemyAdditTarget_1);
